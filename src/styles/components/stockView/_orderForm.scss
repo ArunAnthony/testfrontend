@@ -1,0 +1,136 @@
+$secondary-theme-color: #70E6DB;
+$third-font-color:#9A9A9A;
+$dark-theme-color:#1A1A1A;
+$second-font-color:#fff;
+
+$lighter-secondary-theme:#217267;
+
+$extra-bg-color:#1A1C1D;
+$input-placeholder-bg-color:#202222;
+
+
+@mixin green-themed-button{
+    color: $secondary-theme-color;
+    background: $lighter-secondary-theme;
+    border: solid 1px $secondary-theme-color;
+    border-radius:25px;
+}
+
+.order-form{
+    background: $dark-theme-color;
+    color:$second-font-color;
+    .form-box{
+        padding: 2rem 2rem;
+        border: solid 1px #9b9b9b;
+    }
+    .margin-little{
+       margin-bottom:1rem !important;
+    }
+    .ant-radio-button-wrapper::before{
+        content:none;
+    }
+    .ant-radio-button-wrapper-checked{
+        background-color: $secondary-theme-color; 
+        color:$dark-theme-color;
+    }
+    .ant-radio-button-wrapper{
+        margin:0 0.5rem;
+        border-radius:25px;
+        border:none;
+        font-weight:bold;
+        color:$third-font-color;
+        background: $input-placeholder-bg-color;
+        border: solid 1px $third-font-color;
+    }
+    .buy-sell-radio{
+        text-align: center;
+        margin-bottom:2rem !important;
+        .ant-radio-button-wrapper-checked{
+            background-color: $secondary-theme-color; 
+            color:$dark-theme-color;
+        }
+    }
+    .slippage-radio{
+        .ant-radio-button-wrapper{
+            font-size: 0.7rem;
+            min-width: 3rem;
+            text-align: center;
+        }
+        .ant-radio-button-wrapper-checked{
+            color:$secondary-theme-color;
+            background: $lighter-secondary-theme;
+            border:solid 1px $secondary-theme-color;
+        }
+    }
+    .order-form-label-wrapper{
+        color:$second-font-color !important;
+        display: flex;
+        justify-content: space-between;
+        .label-order-form{
+            font-weight:bold;
+        }
+        .form-field{
+            margin:1rem 0 0rem;
+        }
+        .option-wrapper{
+            .balance{
+                color:$third-font-color;
+                font-weight:bold;
+            }
+            .option-block{
+                background: $input-placeholder-bg-color !important;
+                //  background: #9A9A9A !important;
+                // border: solid 1px $third-font-color;
+                margin: 0px 0 2px 5px;
+                padding: 3px;
+            }
+        }
+    }
+    #create-order-form{
+        color:$second-font-color;
+    }
+
+    .ant-collapse-content, .ant-collapse-header{
+        background: #1A1C1D;
+    }
+    .ant-collapse-header{
+        color:$second-font-color !important;
+    }
+    .label-margin{
+        margin: 1.2rem 0;
+        .order-form-label-wrapper{
+            margin: 0 0 0.8rem;
+        }
+    }
+
+    .relative-block{
+        position:relative;
+        .abs-element{
+            position: absolute;
+            top:3px;
+            right: 0.5rem;
+            .max{
+                @include green-themed-button();
+                padding:0 0.3rem;
+                font-size:0.7rem;
+                margin:0 0.3rem;
+            }
+            .eth,.dai{
+                font-size:0.7rem;
+            }
+        }
+    }
+
+    .order-expiry-option{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 10px;
+    }
+    .submit-btn{
+        text-align: center;
+        .ant-form-item-control{
+            max-width: 100%;
+        }
+    }
+}

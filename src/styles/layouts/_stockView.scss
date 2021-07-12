@@ -1,0 +1,29 @@
+$dark-theme-color:#1A1A1A;
+$gaps:10px;
+.stock-view-overview{
+    background: $dark-theme-color;
+    display: grid;
+    grid-template-columns: 2.8fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: $gaps;
+    margin: 0.7rem 1rem; 
+    .status-block{
+        border: solid 1px #9a9a9a;
+        border-radius: 5px;
+        margin-bottom:$gaps;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .stock-view-overview{
+        display: grid;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: repeat(2, 1fr)  !important;
+        grid-column-gap: 10px  !important;
+        grid-row-gap: 10px  !important;
+    }
+
+    .hide-for-mobile{
+        display: none;
+    }
+}

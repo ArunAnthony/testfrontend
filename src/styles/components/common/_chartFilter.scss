@@ -1,0 +1,17 @@
+.chart-filter-wrapper{
+    display:flex;
+    .chart-filter{
+        margin: 1rem 0.4rem;
+        padding: 0.1rem 0.5rem;
+        border-radius: 20px;
+        font-size: 0.7rem;
+        cursor: pointer;
+        color:#9A9A9A;
+    }
+    .active{
+        color: #6ECFB0;
+        border: solid 1px #8FCCC5;
+        background: #56988E;
+        font-weight: 500;
+    }
+}

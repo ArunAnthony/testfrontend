@@ -1,0 +1,68 @@
+$second-font-color:#fff;
+$third-font-color:#9A9A9A;
+$neon-green-color:lawngreen;
+
+$dark-theme-color:#1A1A1A;
+$dim-dark-bg-color:#202022;
+$secondary-theme-color: #70E6DB;
+
+$danger-sell-color:red;
+
+.active{
+    color:$neon-green-color !important;
+}
+
+.sell-color{
+    color:$danger-sell-color;
+}
+
+.ant-table-tbody > tr > td{
+    border-bottom:solid 1px $dim-dark-bg-color !important;
+    background: $dark-theme-color !important;
+}
+
+.ant-table-cell{
+    background:$dark-theme-color !important;
+    color:$second-font-color !important;
+    font-weight: 700!important;
+    border:none !important;
+}
+
+th.ant-table-cell{
+    font-weight: 500!important;
+    color:$third-font-color !important;
+}
+
+.ant-table-row{
+    pointer-events: none;
+}
+
+.ant-tabs-nav-wrap{
+     color:$third-font-color !important;
+     font-weight: bold;
+    .ant-tabs-tab-active{
+        .ant-tabs-tab-btn{
+            color:$secondary-theme-color !important;
+        }
+    }
+}
+.ant-tabs-tab{
+    margin: 0 4rem 0 0rem;
+    &:hover, :active{
+        color:unset!important;
+    }
+}
+
+.ant-tabs-tab.ant-tabs-tab-active {
+  border-bottom: 2px solid  $secondary-theme-color !important;
+  z-index: 2;
+}
+
+
+//move to another component
+.order-history-component{
+    padding: 1rem;
+    .ant-tabs .ant-tabs-top{
+        border:solid 1px $dark-theme-color;
+    }
+}

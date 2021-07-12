@@ -1,0 +1,23 @@
+$second-font-color:#fff;
+$other-color-2:orangered;
+.summary-block{
+    font-size:0.8rem;
+    .flex-block{
+        display: flex;
+        justify-content: space-between;
+        margin: 0.8rem 0;
+    }
+    .anticon-info-circle{
+        svg{
+            width:0.6rem !important;
+            height:0.6rem !important;
+            margin-left: 0.2rem;
+        }
+    }
+    .discount-value{
+        color:$other-color-2;
+        .ico-block{
+            color:$second-font-color;
+        }
+    }
+}

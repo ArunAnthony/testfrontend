@@ -1,0 +1,24 @@
+$secondary-theme-color: #70E6DB;
+$dark-theme-color:#1A1A1A;
+.chart-tooltip{
+    padding:0.7rem 1rem;
+    background: $secondary-theme-color;
+    border-radius:5px;
+    font-weight: bold;
+    text-align: center;
+    color:$dark-theme-color;
+    .price{
+        font-size:1rem;
+        padding:0 0 0.5rem;
+    }
+}
+
+.graph-wrapper{
+    padding:1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .graph-wrapper{
+        padding:0.2rem;
+    }
+}

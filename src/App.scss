@@ -1,0 +1,107 @@
+$secondary-theme-color: #70E6DB;
+$dark-theme-color:#1A1A1A;
+$input-placeholder-bg-color:#202222;
+
+$second-font-color:#fff;
+.app{
+    height: 100%;
+    .ant-select{
+        width:100%;
+    }
+    .g2-tooltip{
+        background: none!important;
+        border:none !important;
+        box-shadow:none !important;
+    }
+    .bottom-arrow {
+        // &:after{
+        //     content:'';
+        //     position: absolute;
+        //     left: 0;
+        //     right: 0;
+        //     margin: 0 auto;
+        //     width: 0;
+        //     height: 0;
+        //     border-top:  1.3rem solid $secondary-theme-color;
+        //     border-left: 1.1rem solid transparent;
+        //     border-right:  1.1rem solid transparent;
+        // }
+    }
+
+    .dark-bg-cta{
+        border:solid 1px $secondary-theme-color;
+        color:$secondary-theme-color;
+        border-radius:5px;
+        padding:0.5rem 0.7rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .light-theme-bg-cta{
+        background: $secondary-theme-color;
+        color:$dark-theme-color !important;
+        border:none!important;
+        font-weight: bold;
+        padding:0 1rem;
+        border-radius:5px;
+        text-align: center;
+    }
+
+    .ant-input-number{
+        width:100%;
+        background: $input-placeholder-bg-color;
+        color:$second-font-color;
+    }
+    .ant-select-selector{
+        background: $input-placeholder-bg-color !important;
+        color:$second-font-color;
+    }
+
+    .ant-collapse {
+        border:none !important;
+        background-color:#1A1C1D !important ;
+        padding:0 !important;
+    }
+    .ant-collapse-item{
+        border:none !important;
+        background-color: none !important;
+    }
+    .ant-collapse-content{
+        border:none !important;
+        background-color: none !important;
+    }
+    .ant-collapse-header{
+        border:none;
+        padding:0 !important;
+    }
+    .ant-collapse-content-box{
+        padding:0 !important;
+    }
+
+    .ant-form-item {
+        margin:0px !important;
+    }
+
+    input[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type=number]::-webkit-outer-spin-button{
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    
+    .ant-input-number-handler-wrap{
+        display: none;
+    }
+
+    .ant-input-number-input{
+        background:$dark-theme-color !important;
+    }
+    .ant-form-item-has-error .ant-input-number, .ant-form-item-has-error .ant-picker {
+        background-color: $dark-theme-color !important;
+        // border-color: $secondary-theme-color !important;
+    }
+    
+}

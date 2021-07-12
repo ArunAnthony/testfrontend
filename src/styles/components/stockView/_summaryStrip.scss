@@ -1,0 +1,48 @@
+$neon-green-color:lawngreen;
+$third-font-color:#9A9A9A;
+$dim-dark-bg-color:#202022;
+
+.summary-strip{
+    color:#fff;
+    background: black;
+    padding: 0 1rem;
+    .block{
+        background: $dim-dark-bg-color;
+        padding:0.3rem;
+        border-radius:5px;
+        margin:1rem;
+    }
+    .percent-change{
+        color:$neon-green-color;
+        font-weight: bold;
+    }
+    .current-price{
+        font-weight: bold;
+        font-size:1.5rem;
+    }
+    .text{
+        font-size:0.6rem;
+        font-weight: bold;
+        color:$third-font-color;
+    }
+    .main-text{
+        font-weight: bold;
+        margin-left:1rem;
+    }
+    .price-status{
+        margin:0 5rem 0 0;
+    }
+    .dollar-icon{
+        margin-right:0.3rem
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .summary-strip{
+        .block{
+            display: flex;
+            justify-content: space-between;
+            margin:1rem 0;
+        }
+    }
+}
