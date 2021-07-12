@@ -33,6 +33,12 @@ const PricingChart = () => {
     const [filterValue, setFilterValue] = useState("24H");
     const [filterOptions, setFilterOptions] = useState(chartFilter);
 
+
+
+    useEffect(() => {
+        asyncFetch();
+    }, [filterValue]);
+
     const asyncFetch = () => {
         fetch(`https://min-api.cryptocompare.com/data/v2/${filterValue === '1H' ? 'histohour' : 'histoday'}?fsym=BTC&tsym=USD&limit=100`)
             .then((response) => response.json())
@@ -44,10 +50,6 @@ const PricingChart = () => {
                 console.log('fetch data failed', error);
             });
     };
-
-    useEffect(() => {
-        asyncFetch();
-    }, [filterValue]);
 
     const config = {
         data,
